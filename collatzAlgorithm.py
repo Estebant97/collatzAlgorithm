@@ -1,6 +1,6 @@
 # import libraries
 import matplotlib.pyplot as plt
-# All the posible inputs must be integer values
+# All the possible inputs must be integer values
 x = input("Enter value: ")
 # Cast input to integer
 x = int(x)
@@ -14,7 +14,7 @@ xAxis.append(counter)
 # Start of Algorithm 
 # for odd numbers n = n * 3 + 1
 # for even numbers n = n / 2
-# threshold number is 1 : and will repeat 4,2,1 infinetely
+# threshold number is 1 : and will repeat 4,2,1 infinitely
 while x != 1:
     if x % 2 != 0:
         x = x * 3 + 1
@@ -27,6 +27,7 @@ while x != 1:
         counter += 1
         xAxis.append(counter)
 print(yAxis)
+print(f'{max(yAxis)} is the maximum number in the sequence')
 print("end of the hailstorm")
 print("start of infinite loop of 4,2,1")
 print("length of the numbers ", len(yAxis))
